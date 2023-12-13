@@ -11,7 +11,8 @@ export default function Chat() {
         ? messages.map((m) => (
             <div key={m.id} className="whitespace-pre-wrap">
               {m.role === "user" ? "User: " : "AI: "}
-              <textarea defaultValue={m.content} className="w-full p-4 max-h-full"/>
+              {m.role === "user" ? <p>{m.content}</p> : <textarea value={m.content} className='w-full p-4 max-h-full'/>}
+              {/* <textarea value={m.content} className="w-full p-4 max-h-full"/> */}
             </div>
           ))
         : null}
