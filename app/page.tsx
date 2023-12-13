@@ -1,7 +1,6 @@
 "use client";
 
 import { useChat } from "ai/react";
-import ReactMarkdown from "react-markdown";
 
 export default function Chat() {
   const { messages, input, handleInputChange, handleSubmit } = useChat();
@@ -12,7 +11,7 @@ export default function Chat() {
         ? messages.map((m) => (
             <div key={m.id} className="whitespace-pre-wrap">
               {m.role === "user" ? "User: " : "AI: "}
-              <ReactMarkdown>{m.content}</ReactMarkdown>
+              <textarea defaultValue={m.content} className="w-full p-4 max-h-full"/>
             </div>
           ))
         : null}
