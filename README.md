@@ -1,3 +1,3 @@
-# Workshop Demo Application - Let AI Be Your Docs
+# Legal Document Generation Application 
 
-This is a demo application for the [Let AI Be Your Docs](https://github.com/mongodb-developer/vector-search-workshop) workshop.
+
