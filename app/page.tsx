@@ -1,9 +1,11 @@
 "use client";
 
 import { useChat } from "ai/react";
+import AIChat from "./AIChat";
 
 export default function Chat() {
   const { messages, input, handleInputChange, handleSubmit } = useChat();
+  
 
   return (
     <div className="mx-auto w-full max-w-xl py-24 flex flex-col stretch">
@@ -11,7 +13,7 @@ export default function Chat() {
         ? messages.map((m) => (
             <div key={m.id} className="whitespace-pre-wrap">
               {m.role === "user" ? "User: " : "AI: "}
-              {m.role === "user" ? <p>{m.content}</p> : <textarea value={m.content} className='w-full p-4 max-h-full'/>}
+              {m.role === "user" ? <p>{m.content}</p> : <AIChat content={m.content}/>}
               {/* <textarea value={m.content} className="w-full p-4 max-h-full"/> */}
             </div>
           ))
