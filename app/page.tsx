@@ -68,44 +68,45 @@ export default function Chat() {
     <div className="mx-auto w-full max-w-xl py-24 flex flex-col stretch">
       {messages.length > 0
   ? messages.map((m) => (
-    <div key={m.id} className="whitespace-pre-wrap">
-      {m.role === "user" ? "User: " : "AI: "}
+    <div key={m.id} className="whitespace-pre-wrap ">
+      {m.role === "user" ? <p className="font-semibold text-normal text-[#1A63F1]">You</p> : <p className="text-[#277763] font-semibold">AI</p>}
       {m.role === "user" ? (
-        <p>{m.content}</p>
+        <p className="px-4 py-3 text-sm bg-blue-50 rounded-lg mt-1 mb-4">{m.content}</p>
       ) : (
-        <><br/>
-          <div contentEditable='true'>
-            <p className="text-justify p-2" id={m.id}>{m.content}</p>
+        <>
+          <div contentEditable='true' className="rounded-xl focus:outline-none focus:ring-2 focus:ring-lime-900/10">
+            <p className="text-justify    mt-2 px-5 py-8 font-normal text-sm bg-gray-50 rounded-lg" id={m.id}>{m.content}</p>
           </div>
-          <div className="my-4">
-          <button contentEditable='false' onClick={() => {
-            const element = document.getElementById(m.id);
-            if (element) {
-              navigator.clipboard.writeText(element.innerText);
-            }
-          }} className="bg-black hover:bg-gray-800 text-white font-bold py-2 px-4 rounded">
-            Copy
-          </button>
-          <button className="bg-black  hover:bg-gray-800 text-white mx-2 font-bold py-2 px-4 rounded" onClick={
-              () => {
-                const element = document.getElementById(m.id);
-                if (element) {
-                  generatePDF(element.innerText);
-                }
+          <div className="text-xs cursor-pointer my-1  text-gray-500"> <span className="text-red-500">*</span> Tap to edit the content</div>
+          <div className="my-6">
+            <button contentEditable='false' onClick={() => {
+              const element = document.getElementById(m.id);
+              if (element) {
+                navigator.clipboard.writeText(element.innerText);
               }
-            }>
-            Download Pdf
-          </button>
-          <button className="bg-black hover:bg-gray-800 text-white font-bold py-2 px-4 rounded" onClick={
-              () => {
-                const element = document.getElementById(m.id);
-                if (element) {
-                  generateDocument(element.innerText);
+            }} className="bg-[#53BDE1]  text-white font-semibold text-sm  py-2 px-4 rounded-lg">
+              Copy
+            </button>
+            <button className="bg-[#19BA92] hover:bg-gray-800 text-white mx-2 font-semibold text-sm py-2 px-4 rounded-lg" onClick={
+                () => {
+                  const element = document.getElementById(m.id);
+                  if (element) {
+                    generatePDF(element.innerText);
+                  }
                 }
-              }
-            }>
-            Download Docs
-          </button>
+              }>
+              Download Pdf
+            </button>
+            <button className="bg-[#19BA92] hover:bg-gray-800 text-white font-semibold text-sm py-2 px-4 rounded-lg " onClick={
+                () => {
+                  const element = document.getElementById(m.id);
+                  if (element) {
+                    generateDocument(element.innerText);
+                  }
+                }
+              }>
+              Download Docs
+            </button>
           </div>
         </>
       )}
@@ -113,13 +114,16 @@ export default function Chat() {
   ))
   : null}
 
-      <form onSubmit={handleSubmit}>
-        <input
-          className="fixed w-full max-w-md bottom-0 border border-gray-300 rounded mb-8 shadow-xl p-2"
-          value={input}
-          placeholder="Say something..."
-          onChange={handleInputChange}
-        />
+      <form onSubmit={handleSubmit} className="">
+        <div className="">
+
+          <input
+            className="fixed h-12 w-full rounded-xl py-3 px-4 text-sm max-w-xl bottom-0 border border-gray-300  mb-8 focus:outline-none focus:ring-4 focus:ring-blue-500/10 "
+            value={input}
+            placeholder="Say something..."
+            onChange={handleInputChange}
+            />
+        </div>
       </form>
     </div>
   );
