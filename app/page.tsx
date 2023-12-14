@@ -75,8 +75,9 @@ export default function Chat() {
       ) : (
         <><br/>
           <div contentEditable='true'>
-            <p id={m.id}>{m.content}</p>
+            <p className="text-justify p-2" id={m.id}>{m.content}</p>
           </div>
+          <div className="my-4">
           <button contentEditable='false' onClick={() => {
             const element = document.getElementById(m.id);
             if (element) {
@@ -85,7 +86,7 @@ export default function Chat() {
           }} className="bg-black hover:bg-gray-800 text-white font-bold py-2 px-4 rounded">
             Copy
           </button>
-          <button onClick={
+          <button className="bg-black  hover:bg-gray-800 text-white mx-2 font-bold py-2 px-4 rounded" onClick={
               () => {
                 const element = document.getElementById(m.id);
                 if (element) {
@@ -95,7 +96,7 @@ export default function Chat() {
             }>
             Download Pdf
           </button>
-          <button onClick={
+          <button className="bg-black hover:bg-gray-800 text-white font-bold py-2 px-4 rounded" onClick={
               () => {
                 const element = document.getElementById(m.id);
                 if (element) {
@@ -105,6 +106,7 @@ export default function Chat() {
             }>
             Download Docs
           </button>
+          </div>
         </>
       )}
     </div>
