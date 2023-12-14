@@ -20,7 +20,7 @@ export async function POST(req: Request) {
     textKey: "text", 
     embeddingKey: "embedding",
   });
-
+  // Alroy plz look over this
   const retriever = vectorStore.asRetriever({
     searchType: "mmr", // maximum marginal relevance
     searchKwargs: {
