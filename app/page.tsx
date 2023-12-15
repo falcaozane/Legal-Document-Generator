@@ -8,31 +8,45 @@ import Navbar from './components/TempNavbar';
 
 export default function Chat() {
   const { messages, input, handleInputChange, handleSubmit } = useChat();
-  function generateDocument(message: any) {
-    let doc = new Document({
-      sections: [
-        {
-          properties: {},
-          children: [
-            new Paragraph({
-              text: message,
-            }),
-          ],
-        },
-      ],
-    });
+  // function generateDocument(message: any) {
+  //   let doc = new Document({
+  //     sections: [
+  //       {
+  //         properties: {},
+  //         children: [
+  //           new Paragraph({
+  //             text: message,
+  //           }),
+  //         ],
+  //       },
+  //     ],
+  //   });
   
-    saveDocumentToFile(doc, 'first.docx');
-  }
+  //   saveDocumentToFile(doc, 'first.docx');
+  // }
   
-  function saveDocumentToFile(doc: any, fileName: any) {
-    const packer = new Packer();
-    const mimeType = "application/vnd.openxmlformats-officedocument.wordprocessingml.document";
+  // function saveDocumentToFile(doc: any, fileName: any) {
+  //   const packer = new Packer();
+  //   const mimeType = "application/vnd.openxmlformats-officedocument.wordprocessingml.document";
     
-    Packer.toBuffer(doc).then((buffer: any) => {
-      const blob = new Blob([buffer], { type: mimeType });
-      saveAs(blob, fileName);
-    });
+  //   Packer.toBuffer(doc).then((buffer: any) => {
+  //     const blob = new Blob([buffer], { type: mimeType });
+  //     saveAs(blob, fileName);
+  //   });
+  // }
+
+  function downloadInnerHtml(filename: any, elId: any) {
+    var element = document.getElementById(elId);
+  
+    if (element) {
+      var elHtml = element.innerHTML;
+      var link = document.createElement('a');
+      link.setAttribute('download', filename);
+      link.setAttribute('href', 'data:' + 'text/doc' + ';charset=utf-8,' + encodeURIComponent(elHtml));
+      link.click();
+    } else {
+      console.error(`Element with id '${elId}' not found.`);
+    }
   }
 
 
@@ -107,7 +121,8 @@ export default function Chat() {
                   () => {
                     const element = document.getElementById(m.id);
                     if (element) {
-                      generateDocument(element.innerText);
+                      var fileName =  'LegalDocument.doc';
+                      downloadInnerHtml(fileName, m.id);
                     }
                   }
                 }>
