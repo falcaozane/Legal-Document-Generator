@@ -1,18 +1,18 @@
-# **Petition for Divorce by Mutual Consent**
+ Petition for Divorce by Mutual Consent
 
-# In the Court of Ms.................................., Family Courts, District..................., New Delhi
+ In the Court of Ms.............., Family Courts, District................, New Delhi
 
-## Ms. ..................... Petitioner
+ Ms. ........... Petitioner
 
-### versus
+ versus
 
-## Mr. ..................... Respondent
+ Mr. ............ Respondent
 
-**Petition for a decree for dissolving marriage by mutual consent under section 13-B of the Hindu Marriage Act, 1955.**
+Petition for a decree for dissolving marriage by mutual consent under section 13-B of the Hindu Marriage Act, 1955.
 
-*The humble petition of the said ...........*
+The humble petition of the said ...........
 
-**RESPECTFULLY ………..:**
+RESPECTFULLY ………..:
 
 1. That the parties to this present petition are both by religion and faith Hindus and they were married per Hindu rites/customs at........... on ............... and the said marriage is still existing. They are of age above 21 years.
 2. The parties ever since the marriage did not pull on together being of different tastes habits, ideas, and bearing and so being completely different in nature and temperament and could never adjust themselves even for some days and so had no love nor heart for each other and there are not going to reconcile between them in the future.
@@ -21,20 +21,20 @@
 5. That the above petition is bona fide and not presented in collusion between the parties.
 6. That there are every legal grounds in granting the relief.
 
-**Your petitioners hence pray for a Decree of dissolution of marriage by mutual consent under section 13B of the Hindu Marriage Act 1955 and also and other Orders be made as to this Learned Court may deem proper and fit. And your petitioners as in duty bound shall ever pray,** 
+Your petitioners hence pray for a Decree of dissolution of marriage by mutual consent under section 13B of the Hindu Marriage Act 1955 and also and other Orders be made as to this Learned Court may deem proper and fit. And your petitioners as in duty bound shall ever pray, 
 
-**Verification**
+Verification
 
-*I, Mr............. son of............... aged about............ years residing at......... do hereby solemnly affirm and say as follows:*
+I, Mr............. son of............... aged about............ years residing at......... do hereby solemnly affirm and say as follows:
 
-*I am the petitioner No. 1 above-named and I know and I have made myself acquainted with the facts and circumstances of this case. The statements in paragraphs 1 to 6 are true to my knowledge and belief. I signed this verification on this ............ day of............... at the CourtHouse at ........................*
+I am the petitioner No. 1 above-named and I know and I have made myself acquainted with the facts and circumstances of this case. The statements in paragraphs 1 to 6 are true to my knowledge and belief. I signed this verification on this ............ day of............... at the CourtHouse at ........................
 
-*Signature of Mr................
+Signature of Mr................
 
-**Verification**
+Verification
 
-*I, Ms............. wife of Mr.............. daughter of ……, aged about............ years by occupation service residing at......... do hereby solemnly affirm and say as follows:*
+I, Ms............. wife of Mr.............. daughter of ……, aged about............ years by occupation service residing at......... do hereby solemnly affirm and say as follows:
 
-*I am the petitioner No. 2 above-named. I know and I have made myself acquainted with the facts and circumstances of this case. The statements in paragraphs 1 to 6 of the petition hereinabove are true to my knowledge and belief. I signed this verification on this ............ day of............... at the CourtHouse at................*
+I am the petitioner No. 2 above-named. I know and I have made myself acquainted with the facts and circumstances of this case. The statements in paragraphs 1 to 6 of the petition hereinabove are true to my knowledge and belief. I signed this verification on this ............ day of............... at the CourtHouse at................
 
-*Signature of Ms..............*
+Signature of Ms..
